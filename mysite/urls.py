@@ -37,5 +37,8 @@ urlpatterns = [
     url(r'^post/(?P<pk>\d+)/publish/$', post_publish, name='post_publish'),
     url(r'^post/(?P<pk>\d+)/remove/$', post_remove, name='post_remove' ),
 
+    url(r'^post/(?P<pk>\d+)/comment/$', add_comment_to_post, name='add_comment_to_post'),
+    url(r'^comment/(?P<pk>\d+)/approve/$', comment_approve, name='comment_approve' ),
+    url(r'^comment/(?P<pk>\d+)/remove/$', comment_remove, name='comment_remove' ),
 
 ]
